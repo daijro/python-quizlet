@@ -185,13 +185,13 @@ Get the language that the defintions are written in (English is "en")
 
 *Return type:	`str`*
 
-<hr width=30>
+<hr width=70>
 
 ## `QuizletParser(link).author`
 
 Gets the quizlet set's author's data
 
-<hr width=70>
+<hr width=30>
 
 #### `.author.name`
 
@@ -255,13 +255,13 @@ Gets if or if not the author is a quizlet admin
 
 *Return type:	`bool`*
 
-<hr width=30>
+<hr width=70>
 
 ## `QuizletParser(link).flashcards`
 
 Documentation for how to use the flashcard items
 
-<hr width=70>
+<hr width=30>
 
 #### `.flashcards[index].index`
 
@@ -309,6 +309,8 @@ If there is an image, return the image URL
 
 *Return type:	`str` (returns `NoneType` when image is not avaliable)*
 
+<hr width=30>
+
 #### `.flashcards[index].termTts`
 
 Gets the text-to-speech URL for the term/question
@@ -347,13 +349,13 @@ Gets when the flashcard was last modified
 
 *Return type:	`int`*
 
-<hr width=30>
+<hr width=70>
 
 ## `FindFlashcard(flashcards: list, match: str)`
 
 Documentation for how to use the flashcard searcher
 
-<hr width=70>
+<hr width=30>
 
 The `FindFlashcard(flashcards, match)` function will simply return a `QuizletParser(link).flashcards` object, but with an added `.similarity` to show how similar identified flashcard is to the match input.
 
