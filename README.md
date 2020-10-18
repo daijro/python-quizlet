@@ -16,7 +16,6 @@ beautifulsoup4
 ## Usage:
 
 #### Here is an example of the quizlet api being used in python 3:
-
 ```py
 >>> from quizlet import QuizletParser
 >>> q = QuizletParser('https://quizlet.com/158478531/python-flash-cards/')
@@ -25,9 +24,7 @@ beautifulsoup4
 >>> q.description # returns the quizlet description
 'python test 1 computer science'
 ```
-
 Getting author information:
-
 ```py
 >>> q.author.name # author's username
 'Steven_Howard11'
@@ -36,10 +33,9 @@ Getting author information:
 >>> q.author.timeZone # author's timezone
 'America/New_York'
 ```
-
 Getting a flashcard
-
 ```py
+
 >>> q.flashcards[0].term # gets the first flashcard's term 
 'algorithm'
 >>> q.flashcards[0].defintion # gets the first flashcard's definition
@@ -53,19 +49,24 @@ Getting a flashcard
 ```py
 >>> from quizlet import QuizletParser, FindFlashcard
 >>> q = QuizletParser('https://quizlet.com/158478531/python-flash-cards/')
->>> flashcard = FindFlashcard(q.flashcards, match='algoritm')  # finds the flashcard most similar to the input
+>>> flashcard = FindFlashcard(q.flashcards, match='Programs are commonly referred to as')  # finds the flashcard most similar to the input
 >>> flashcard.similarity  # calculates how similar the identified flashcard is to the input
 1.0
 >>> flashcard.term  # gets the identified term
-'algoritm'
+'Programs are commonly referred to as'
 >>> flashcard.defintion  # gets the identified definition
-'A set of specific steps for solving a category of problems'
+'software'
 ```
 
 ---
 
 # Objects:
 
+- [`QuizletParser(link)`](https://github.com/daijro/python-quizlet#quizletparserlink-str)
+- [`QuizletParser(link).author`](https://github.com/daijro/python-quizlet#quizletparserlinkauthor)
+- [`QuizletParser(link).flashcards`](https://github.com/daijro/python-quizlet#quizletparserlinkflashcards)
+- [`FindFlashcard(flashcards, match)`](https://github.com/daijro/python-quizlet#findflashcardflashcards-list-match-str)
+<hr width=50>
 
 ## `QuizletParser(link: str)`
 
