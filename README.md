@@ -15,7 +15,7 @@ beautifulsoup4
 
 ## Usage:
 
-### Here is an example of the quizlet api being used in python 3:
+#### Here is an example of the quizlet api being used in python 3:
 
 ```py
 >>> from quizlet import QuizletParser
@@ -48,7 +48,7 @@ Getting a flashcard
 
 <hr width=50>
 
-### Searching for flashcards:
+#### Searching for flashcards:
 
 ```py
 >>> from quizlet import QuizletParser, FindFlashcard
