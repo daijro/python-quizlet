@@ -6,9 +6,7 @@ To install this api, simply add the `quizlet.py` file to your project.
 
 ## Requirements:
 ```
-requests-html
-python-box
-beautifulsoup4
+pip install requests-html python-box beautifulsoup4
 ```
 
 ---
